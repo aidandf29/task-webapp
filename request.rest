@@ -1,0 +1,39 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhaWRhbiIsImVtYWlsIjoiYWlkYW5AZ21haWwuY29tIiwiaWF0IjoxNjkxMDk4OTIyLCJleHAiOjE2OTEwOTg5NTJ9.-gcDLcb5xdrvZ_He06B4btr4w5FwDpuAnqwpEdMmnyE
+
+
+###
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name":"aidan",
+    "email":"aidan@gmail.com",
+    "password":"123",
+    "confirmPassword":"321"
+    
+}
+
+###
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"aidan@gmail.com",
+    "password":"123"
+}
+
+###
+
+GET http://localhost:5000/token
+
+###
+PUT   http://localhost:5000/update
+Content-Type: application/json
+
+{
+    "name":"dad"
+}
+
+###
+# DELETE http://localhost:5000/logout
