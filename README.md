@@ -6,9 +6,14 @@ proper user access control.
 
 # Endpoint
 
-GET /users (used for getting users info)
-POST /users (used for inserting profille info [register])
-POST /login (login endpoint)
-GET /token (used for refreshing token)
-PUT /update (updating current logged in profile email)
-DELETE /logout (logout endpoint)
+GET     /users     (used for getting users info)
+
+POST    /users     (used for inserting profille info [register])
+
+POST    /login     (login endpoint)
+
+GET     /token     (used for refreshing token)
+
+PUT     /update    (updating current logged in profile email)
+
+DELETE  /logout    (logout endpoint)
